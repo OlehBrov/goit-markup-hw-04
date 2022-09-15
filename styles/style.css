@@ -117,7 +117,7 @@ body {
 .contact-link:hover .contacts-icon,
 .contact-link:hover,
 .contact-link:focus .contacts-icon,
-.contact-link:focus{
+.contact-link:hover{
   fill: var(--nav-color);
   color: var(--nav-color);
 }
