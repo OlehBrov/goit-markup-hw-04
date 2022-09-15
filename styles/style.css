@@ -52,6 +52,7 @@ body {
 }
 .header-container {
   display: flex;
+
 }
 
 .main-nav,
@@ -93,6 +94,7 @@ body {
 .nav-link:focus,
 .nav-link.active {
   color: var(--nav-color);
+  
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -106,13 +108,30 @@ body {
   margin-right: 50px;
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  padding: 0;
+  fill: var(--contacts-color);
+}
+
+.contact-link:hover .contacts-icon,
+.contact-link:hover,
+.contact-link:focus .contacts-icon,
+.contact-link:focus{
+  fill: var(--nav-color);
+  color: var(--nav-color);
+}
+
 /* Hero section */
 
 .hero-section {
   background-color: var(--hero-bgc);
   padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
-
 .hero-header {
   text-align: center;
   margin: 0 auto;
@@ -289,9 +308,6 @@ body {
   font-weight: 500;
 }
 
-.contact-link:hover {
-  color: var(--nav-color);
-}
 
 /* *****************
 PORTFOLIO PAGE
