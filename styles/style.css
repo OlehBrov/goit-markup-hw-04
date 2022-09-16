@@ -179,6 +179,13 @@ body {
   display: flex;
 }
 
+.advantages-icon {
+  display: flex;
+  margin: 25px auto 0px;
+  fill: var(--main-text-color);
+  
+
+}
 .advantage-item {
   flex-wrap: wrap;
 }
@@ -192,6 +199,7 @@ body {
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 10px;
+  margin-top: 55px;
 }
 
 .advantage-text {
