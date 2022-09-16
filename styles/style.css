@@ -245,6 +245,7 @@ body {
 .team-members {
   display: flex;
   width: calc((100%-90px) / 4);
+  
 }
 .member {
   background: #ffffff;
@@ -277,6 +278,54 @@ body {
   color: var(--advantages-paragraph);
   margin-top: 5px;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social-item:not(:last-child){
+  margin-right: 10px;
+}
+.social-link{
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: #AFB1B8;
+ 
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+}
+.social-link:hover, 
+.social-link:focus{
+  fill: var(--white-text);
+   background-color:var(--nav-color)
+}
+.company-icon {
+align-items: center;
+justify-content: center;
+}
+/* OUR CLIENTS */
+.clients-section {
+  padding: 94px 0;
+}
+.clients-list{
+  display: flex;
+}
+.client-item:not(:last-child){
+  margin-right: 30px;
+}
+.company-icon {
+  fill: var(--contacts-color);
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+.company-icon:hover{
+  fill: #2196F3;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+}
 /* FOOTER */
 .footer-section {
   background-color: var(--footer-bgc);
@@ -305,7 +354,7 @@ body {
 }
 
 .address-link {
-  /* display: block; */
+ 
   color: var(--white-text);
   font-style: normal;
 }
