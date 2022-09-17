@@ -101,7 +101,7 @@ body {
 }
 .contacts {
   margin-left: auto;
-  align-items: center;
+  align-items: baseline;
 }
 
 .contact-item:not(:last-child) {
@@ -110,9 +110,8 @@ body {
 
 .contacts-icon {
   margin-right: 10px;
-  padding: 0;
   fill: var(--contacts-color);
-}
+  }
 
 .contact-link:hover .contacts-icon,
 .contact-link:hover,
@@ -245,7 +244,7 @@ body {
 .team-members {
   display: flex;
   width: calc((100%-90px) / 4);
-  
+
 }
 .member {
   background: #ffffff;
@@ -327,9 +326,16 @@ justify-content: center;
   border-radius: 4px;
 }
 /* FOOTER */
+.footer-container {
+  display: flex;
+}
 .footer-section {
   background-color: var(--footer-bgc);
-  padding: 60px 0;
+
+}
+.footer-logo-section {
+margin-top: 60px;
+margin-bottom: 60px;
 }
 .footer-studio-word {
   line-height: 1.2;
@@ -365,7 +371,44 @@ justify-content: center;
   font-weight: 500;
 }
 
+.footer-social{
+  display: flex;
+}
+.join-text {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text);
 
+  margin-bottom: 20px;
+
+}
+.join-section {
+  display: block;
+  margin-left: 70px;
+  margin-top: 72px;
+}
+
+.footer-social-link{
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);;
+ 
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.footer-social-item:not(:last-child){
+  margin-right: 10px;
+}
+.footer-social-link:hover, 
+.footer-social-link:focus{
+  fill: var(--white-text);
+  background-color:var(--nav-color)
+}
 /* *****************
 PORTFOLIO PAGE
 ******************** */
