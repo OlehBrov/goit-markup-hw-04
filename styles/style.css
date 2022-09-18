@@ -52,7 +52,6 @@ body {
 }
 .header-container {
   display: flex;
-
 }
 
 .main-nav,
@@ -94,7 +93,6 @@ body {
 .nav-link:focus,
 .nav-link.active {
   color: var(--nav-color);
-  
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -111,12 +109,12 @@ body {
 .contacts-icon {
   margin-right: 10px;
   fill: var(--contacts-color);
-  }
+}
 
 .contact-link:hover .contacts-icon,
 .contact-link:hover,
 .contact-link:focus .contacts-icon,
-.contact-link:hover{
+.contact-link:hover {
   fill: var(--nav-color);
   color: var(--nav-color);
 }
@@ -126,10 +124,13 @@ body {
 .hero-section {
   background-color: var(--hero-bgc);
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 .hero-header {
   text-align: center;
@@ -182,8 +183,6 @@ body {
   display: flex;
   margin: 25px auto 0px;
   fill: var(--main-text-color);
-  
-
 }
 .advantage-item {
   flex-wrap: wrap;
@@ -244,7 +243,6 @@ body {
 .team-members {
   display: flex;
   width: calc((100%-90px) / 4);
-
 }
 .member {
   background: #ffffff;
@@ -283,36 +281,36 @@ body {
   justify-content: center;
   margin-top: 16px;
 }
-.social-item:not(:last-child){
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link{
+.social-link {
   display: block;
   width: 44px;
   height: 44px;
-  fill: #AFB1B8;
- 
+  fill: #afb1b8;
+
   border: none;
   border-radius: 50%;
   padding: 12px;
 }
-.social-link:hover, 
-.social-link:focus{
+.social-link:hover,
+.social-link:focus {
   fill: var(--white-text);
-   background-color:var(--nav-color)
+  background-color: var(--nav-color);
 }
 .company-icon {
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 /* OUR CLIENTS */
 .clients-section {
   padding: 94px 0;
 }
-.clients-list{
+.clients-list {
   display: flex;
 }
-.client-item:not(:last-child){
+.client-item:not(:last-child) {
   margin-right: 30px;
 }
 .company-icon {
@@ -320,9 +318,9 @@ justify-content: center;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 }
-.company-icon:hover{
-  fill: #2196F3;
-  border: 1px solid #2196F3;
+.company-icon:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
 /* FOOTER */
@@ -331,11 +329,10 @@ justify-content: center;
 }
 .footer-section {
   background-color: var(--footer-bgc);
-
 }
 .footer-logo-section {
-margin-top: 60px;
-margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .footer-studio-word {
   line-height: 1.2;
@@ -360,7 +357,6 @@ margin-bottom: 60px;
 }
 
 .address-link {
- 
   color: var(--white-text);
   font-style: normal;
 }
@@ -371,7 +367,7 @@ margin-bottom: 60px;
   font-weight: 500;
 }
 
-.footer-social{
+.footer-social {
   display: flex;
 }
 .join-text {
@@ -382,7 +378,6 @@ margin-bottom: 60px;
   color: var(--white-text);
 
   margin-bottom: 20px;
-
 }
 .join-section {
   display: block;
@@ -390,24 +385,24 @@ margin-bottom: 60px;
   margin-top: 72px;
 }
 
-.footer-social-link{
+.footer-social-link {
   display: block;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);;
- 
+  background: rgba(255, 255, 255, 0.1);
+
   border: none;
   border-radius: 50%;
   padding: 12px;
 }
 
-.footer-social-item:not(:last-child){
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-link:hover, 
-.footer-social-link:focus{
+.footer-social-link:hover,
+.footer-social-link:focus {
   fill: var(--white-text);
-  background-color:var(--nav-color)
+  background-color: var(--nav-color);
 }
 /* *****************
 PORTFOLIO PAGE
@@ -431,7 +426,7 @@ PORTFOLIO PAGE
   background: var(--team-section-style);
   border-radius: 4px;
   border: none;
- 
+
   padding: 6px 22px;
   display: block;
 }
@@ -445,7 +440,12 @@ PORTFOLIO PAGE
   background-color: var(--nav-color);
   color: var(--white-text);
   border: none;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.product-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button {
