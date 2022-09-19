@@ -108,13 +108,21 @@ body {
 
 .contacts-icon {
   margin-right: 10px;
+  
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: var(--contacts-color);
   fill: var(--contacts-color);
+  font-style: normal;
+  font-weight: 500;
 }
 
-.contact-link:hover .contacts-icon,
 .contact-link:hover,
-.contact-link:focus .contacts-icon,
-.contact-link:hover {
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
   fill: var(--nav-color);
   color: var(--nav-color);
 }
@@ -122,8 +130,9 @@ body {
 /* Hero section */
 
 .hero-section {
+   padding: 200px 0;
+  
   background-color: var(--hero-bgc);
-  padding: 200px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -177,15 +186,25 @@ body {
 }
 .advantages-list {
   display: flex;
+  align-items: flex-start;
 }
 
 .advantages-icon {
-  display: flex;
-  margin: 25px auto 0px;
-  fill: var(--main-text-color);
+  display: block;
+
 }
 .advantage-item {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.adv-icon-box {
+  display: flex;
+  background: #F5F4FA;
+  padding: 25px 0;
+  justify-content: center;
+  border-radius: 4px;
 }
 .advantage-item:not(:first-child) {
   margin-left: 30px;
@@ -196,8 +215,9 @@ body {
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-top: 30px;
   margin-bottom: 10px;
-  margin-top: 55px;
+  
 }
 
 .advantage-text {
@@ -285,14 +305,15 @@ body {
   margin-right: 10px;
 }
 .social-link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   fill: #afb1b8;
 
   border: none;
   border-radius: 50%;
-  padding: 12px;
+  justify-content: center;
+  align-items: center;
 }
 .social-link:hover,
 .social-link:focus {
@@ -310,30 +331,45 @@ body {
 .clients-list {
   display: flex;
 }
+
+.client-item {
+  display: flex;
+  width: calc((100%-150px)/6);
+  
+ }
+
+.client-link {
+display: flex;
+flex-grow: 1;
+
+justify-content: center;
+align-items: center;
+padding: 15px 0;
+border: 1px solid rgba(175, 177, 184, 1);
+border-radius: 4px;
+fill: #AFB1B8;
+
+}
+
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-.company-icon {
-  fill: var(--contacts-color);
-  border: 1px solid rgba(175, 177, 184, 1);
-  border-radius: 4px;
-}
-.company-icon:hover {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+
+.client-link:hover,
+.client-link:focus {
+fill: #2196f3;
+border: 1px solid #2196f3;
 }
 /* FOOTER */
 .footer-container {
   display: flex;
+  padding: 60px 0;
+  align-items: baseline;
 }
 .footer-section {
   background-color: var(--footer-bgc);
 }
-.footer-logo-section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+
 .footer-studio-word {
   line-height: 1.2;
   color: var(--white-text);
@@ -361,11 +397,7 @@ body {
   font-style: normal;
 }
 
-.contact-link {
-  color: var(--contacts-color);
-  font-style: normal;
-  font-weight: 500;
-}
+
 
 .footer-social {
   display: flex;
@@ -382,18 +414,21 @@ body {
 .join-section {
   display: block;
   margin-left: 70px;
-  margin-top: 72px;
+
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
+  fill: var(--white-text);
 
   border: none;
   border-radius: 50%;
-  padding: 12px;
+  
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-item:not(:last-child) {
@@ -413,7 +448,6 @@ PORTFOLIO PAGE
 .products-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 6px;
   margin-bottom: 34px;
 }
 
@@ -443,20 +477,26 @@ PORTFOLIO PAGE
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.product-card:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.button {
-  cursor: pointer;
-}
-
 .products {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.product-card {
+  display: block;
+}
+.product-card:hover,
+.product-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); 
+  }
+
+.button {
+  cursor: pointer;
+}
+
+
 
 .product-text {
   border: 1px solid #eeeeee;
@@ -468,6 +508,7 @@ PORTFOLIO PAGE
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-text-color);
   margin-bottom: 2px;
 }
 
